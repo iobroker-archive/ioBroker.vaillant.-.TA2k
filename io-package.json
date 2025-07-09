@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "vaillant",
-    "version": "0.7.3",
+    "version": "0.7.5",
     "news": {
+      "0.7.5": {
+        "en": "revert change to fix save issue",
+        "de": "revert-änderung zu beheben speicherproblem",
+        "ru": "обратное изменение для исправления проблемы сохранения",
+        "pt": "reverter a alteração para corrigir o problema de gravação",
+        "nl": "return change to fix save issue",
+        "fr": "revenir le changement pour corriger le problème de sauvegarde",
+        "it": "ripristinare la modifica per risolvere il problema di salvataggio",
+        "es": "revertir el cambio para solucionar problemas",
+        "pl": "revert change to fix save issue",
+        "uk": "перевернути зміни, щоб виправити проблему збереження",
+        "zh-cn": "返回更改以修正保存问题"
+      },
       "0.7.3": {
         "en": "fix month stats period",
         "de": "fix für monat statistiken zeitraum",
@@ -62,21 +75,16 @@
       "0.4.0": {
         "en": "Fix update for non tli devices",
         "de": "Fix update für nicht tli Geräte"
-      },
-      "0.3.1": {
-        "en": "Fix login problem",
-        "de": "Loginproblem behoben"
-      },
-      "0.3.0": {
-        "en": "Fix remote controls and added boost and quick veto",
-        "de": "Remote Controls gefixt und Boost und quickveto hinzugefügt"
       }
     },
     "messages": [
       {
         "condition": {
           "operand": "and",
-          "rules": ["oldVersion<0.6.0", "newVersion>=0.6.0"]
+          "rules": [
+            "oldVersion<0.6.0",
+            "newVersion>=0.6.0"
+          ]
         },
         "title": {
           "en": "Stats change",
@@ -105,7 +113,10 @@
           "zh-cn": "统计结构已更改。请将您的vis和脚本调整为新的统计结构"
         },
         "level": "warn",
-        "buttons": ["agree", "cancel"]
+        "buttons": [
+          "agree",
+          "cancel"
+        ]
       }
     ],
     "title": "Vaillant multiMATIC",
@@ -133,8 +144,15 @@
       "pl": "Adapter Vaillant multiMatic VR900 / VR920",
       "zh-cn": "Vaillant multiMatic VR900 / VR920适配器"
     },
-    "authors": ["TA2k <tombox2020@gmail.com>"],
-    "keywords": ["vaillant", "multiMATIC", "VR900", "VR920"],
+    "authors": [
+      "TA2k <tombox2020@gmail.com>"
+    ],
+    "keywords": [
+      "vaillant",
+      "multiMATIC",
+      "VR900",
+      "VR920"
+    ],
     "license": "MIT",
     "platform": "Javascript/Node.js",
     "main": "main.js",

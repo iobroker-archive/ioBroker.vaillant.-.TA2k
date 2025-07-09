@@ -253,6 +253,9 @@ zone/2/xxxx
 ## Changelog
 
 <!-- ### **WORK IN PROGRESS** -->
+### 0.7.5 (2025-07-09)
+ - revert change to fix save issue
+
 ### 0.7.2 (2024-04-18)
 
 - fix month stats period
