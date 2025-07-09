@@ -1,21 +1,8 @@
 {
   "common": {
     "name": "vaillant",
-    "version": "0.7.4",
+    "version": "0.7.3",
     "news": {
-      "0.7.4": {
-        "en": "change password format",
-        "de": "passwort-format ändern",
-        "ru": "изменение формата пароля",
-        "pt": "alterar o formato da senha",
-        "nl": "wachtwoordformaat wijzigen",
-        "fr": "modifier le format du mot de passe",
-        "it": "modificare il formato password",
-        "es": "cambiar el formato de contraseña",
-        "pl": "zmienić format hasła",
-        "uk": "змінити формат пароля",
-        "zh-cn": "更改密码格式"
-      },
       "0.7.3": {
         "en": "fix month stats period",
         "de": "fix für monat statistiken zeitraum",
@@ -75,16 +62,21 @@
       "0.4.0": {
         "en": "Fix update for non tli devices",
         "de": "Fix update für nicht tli Geräte"
+      },
+      "0.3.1": {
+        "en": "Fix login problem",
+        "de": "Loginproblem behoben"
+      },
+      "0.3.0": {
+        "en": "Fix remote controls and added boost and quick veto",
+        "de": "Remote Controls gefixt und Boost und quickveto hinzugefügt"
       }
     },
     "messages": [
       {
         "condition": {
           "operand": "and",
-          "rules": [
-            "oldVersion<0.6.0",
-            "newVersion>=0.6.0"
-          ]
+          "rules": ["oldVersion<0.6.0", "newVersion>=0.6.0"]
         },
         "title": {
           "en": "Stats change",
@@ -113,12 +105,10 @@
           "zh-cn": "统计结构已更改。请将您的vis和脚本调整为新的统计结构"
         },
         "level": "warn",
-        "buttons": [
-          "agree",
-          "cancel"
-        ]
+        "buttons": ["agree", "cancel"]
       }
     ],
+    "title": "Vaillant multiMATIC",
     "titleLang": {
       "en": "Vaillant multiMATIC",
       "de": "Vaillant multiMATIC",
@@ -129,7 +119,6 @@
       "it": "Vaillant multiMATIC",
       "es": "Vaillant multiMATIC",
       "pl": "Vaillant multiMATIC",
-      "uk": "Vaillant multiMATIC",
       "zh-cn": "万能multiMATIC"
     },
     "desc": {
@@ -142,30 +131,19 @@
       "it": "Vaillant multiMatic VR900 / VR920 Adapter",
       "es": "Adaptador Vaillant multiMatic VR900 / VR920",
       "pl": "Adapter Vaillant multiMatic VR900 / VR920",
-      "uk": "Adapter Vaillant multiMatic VR900 / VR920",
       "zh-cn": "Vaillant multiMatic VR900 / VR920适配器"
     },
-    "authors": [
-      "TA2k <tombox2020@gmail.com>"
-    ],
-    "keywords": [
-      "vaillant",
-      "multiMATIC",
-      "VR900",
-      "VR920"
-    ],
-    "licenseInformation": {
-      "license": "MIT",
-      "type": "free"
-    },
+    "authors": ["TA2k <tombox2020@gmail.com>"],
+    "keywords": ["vaillant", "multiMATIC", "VR900", "VR920"],
+    "license": "MIT",
     "platform": "Javascript/Node.js",
+    "main": "main.js",
     "icon": "vaillant.png",
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/TA2k/ioBroker.vaillant/master/admin/vaillant.png",
     "readme": "https://github.com/TA2k/ioBroker.vaillant/blob/master/README.md",
     "loglevel": "info",
     "mode": "daemon",
-    "tier": 3,
     "type": "climate-control",
     "connectionType": "cloud",
     "dataSource": "poll",
@@ -173,20 +151,13 @@
     "materialize": true,
     "dependencies": [
       {
-        "js-controller": ">=5.0.19"
+        "js-controller": ">=1.4.2"
       }
     ]
   },
-  "encryptedNative": [
-    "password_new"
-  ],
-  "protectedNative": [
-    "password_new"
-  ],
   "native": {
     "user": "",
     "password": "",
-    "password_new": "",
     "interval": 15,
     "smartPhoneId": "",
     "cleantype": true,

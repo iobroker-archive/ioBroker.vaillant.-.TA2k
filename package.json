@@ -33,16 +33,12 @@
     "prettier": "^3.3.3",
     "typescript": "~5.6.2"
   },
-  "engines": {
-    "node": ">=18.2.4"
-  },
   "homepage": "https://github.com/TA2k/ioBroker.vaillant",
   "keywords": [
     "vaillant",
     "multiMATIC",
     "VR900",
-    "VR920",
-    "ioBroker"
+    "VR920"
   ],
   "license": "MIT",
   "main": "main.js",
@@ -61,5 +57,5 @@
     "translate": "translate-adapter",
     "release": "release-script --all"
   },
-  "version": "0.7.4"
+  "version": "0.7.3"
 }
